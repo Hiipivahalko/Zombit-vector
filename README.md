@@ -6,9 +6,9 @@ In: 2020 Data Compression Conference (DCC). 2020](https://ieeexplore.ieee.org/do
 
 ## Setup / Install
 
-* Zombit-vector has dependencies on [SDSL](https://github.com/Hiipivahalko/sdsl-lite.git)-libary (see install instructions from link and not it is not the original repo) example to
-`<repo-root>/external/cpp_libs`.
-* Zombit implementation is template, so to use Zombit-vector, copy content from `./src/include` directory to your include path.
+* Zombit-vector has dependencies on [SDSL-library](https://github.com/Hiipivahalko/sdsl-lite.git).
+Install library for your include path (see instructions from link), note that the repo is not the original.
+* Zombit implementation is template, to use Zombit-vector, copy the content from `./src/include` directory to your include path.
 
 ### Example usage
 
@@ -21,7 +21,8 @@ In: 2020 Data Compression Conference (DCC). 2020](https://ieeexplore.ieee.org/do
 // bv_bv_bv_O2
 typedef Zombit<sdsl::bit_vector, sdsl::rank_support_v5O2<0>,
                 sdsl::bit_vector, sdsl::rank_support_v5O2<1>, sdsl::select_support_mcl<1>,
-                sdsl::bit_vector, sdsl::rank_support_v5O2<1>, sdsl::select_support_mcl<1>> zombit_bv_bv_bv_O2;
+                sdsl::bit_vector, sdsl::rank_support_v5O2<1>, sdsl::select_support_mcl<1>
+            > zombit_bv_bv_bv_O2;
 
 int main() {
 
